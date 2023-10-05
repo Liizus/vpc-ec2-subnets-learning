@@ -1,20 +1,16 @@
 variable "ec2_public_subnet_name" {
-  type    = string
-  default = "ec2-public-subnet"
+  type = string
 }
 
 variable "ec2_private_subnet_name" {
-  type    = string
-  default = "ec2-private-subnet"
+  type = string
 }
 variable "cidr_addressname" {
-  type    = list(string)
-  default = ["0.0.0.0/0"]
+  type = list(string)
 }
 
 variable "cidr_address_ssh" {
-  type    = list(string)
-  default = ["0.0.0.0/0"] #your IP here
+  type = list(string)
 }
 
 variable "instance_type" {
